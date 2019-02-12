@@ -59,13 +59,11 @@ public class PersonHandler {
 
     public String forEachLoop() {
         String result = "";
-        int i = 0;
-        while(i < personArray.length) {
-            result = result + personArray[i];
-            i++;
-        }
         
-        
+
+        for( Person person : personArray) {
+            result = result + person;
+        }        
         // identify array's type
         // identify array's variable-name
 
